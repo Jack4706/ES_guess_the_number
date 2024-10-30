@@ -12,7 +12,9 @@ int main() {
     srand(time(NULL));
     int n = rand() % (MAX - MIN + 1) + MIN;
 
-    printf("Benvenuto in:\n     * * * G U E S S   T H E   N U M B E R * * *\n");
+    printf("Benvenuto in:\n");
+    printf("\n");
+    printf("     * * * G U E S S   T H E   N U M B E R * * *\n");
     printf("\n");
     printf("              seleziona difficolta:\n");
     printf("\n");
@@ -48,6 +50,7 @@ int main() {
 
             if (tentativi == 3) {
                 printf("\n            Hai esaurito i tentativi\n              !!G A M E   O V E R!!\n");
+                printf("\n                 il numero era %d\n",n);
             }
             break;
         case 2:
@@ -76,6 +79,7 @@ int main() {
 
             if (tentativi == 2) {
                 printf("\n            Hai esaurito i tentativi\n              !!G A M E   O V E R!!\n");
+                printf("\n                 il numero era %d\n",n);
             }
             break;
         case 3:
@@ -104,6 +108,7 @@ int main() {
 
             if (tentativi == 1) {
                 printf("\n            Hai esaurito i tentativi\n              !!G A M E   O V E R!!\n");
+                printf("\n                 il numero era %d\n",n);
             }
             break;
     }
